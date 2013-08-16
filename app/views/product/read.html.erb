@@ -1,0 +1,36 @@
+<table border="" cellpadding="5">
+		<th>		
+			Product Name
+		</th>
+		
+		<th>		
+			Category
+		</th>
+		
+		<th>		
+			Vendor Name
+		</th>
+		
+		<th>		
+			Quandity
+		</th>
+
+		<th>		
+			Price
+		</th>
+		
+		<th>
+			Options
+		</th>
+		<% @product.each do |pro|%>
+		<tr>
+			<td><%= pro.product_name%></td>
+			<td><%= pro.product_category%></td>
+			<td><%= pro.vendor_name%></td>
+			<td><%= pro.product_qty%></td>
+			<td><%= pro.price%></td>
+			<td><a href="/edit?product_id=<%= pro.id%>">Edit /</a><a href="/delete?product_id=<%= pro.id%>">Delete</a></td>
+		</tr>
+		<% end %>
+	
+</table>

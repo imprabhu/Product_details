@@ -1,0 +1,35 @@
+<form method="post" action="/update">
+<table>
+	<tr>
+		<td>
+			<h2>Update Product Details</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>Product Name</td>
+		<td><input type="text" name="ProductName" value="<%= @product_name%>" /></td>
+	</tr>
+	<tr>
+		<td>Product Category</td>
+		<td><input type="text" name="ProductCategory" value="<%= @product_category%>"/></td>
+	</tr>
+	<tr>
+		<td>Vendor Name</td>
+		<td><input type="text" name="VendorName" value="<%= @vendor_name%>"/></td>
+	</tr>
+	<tr>
+		<td>Product Quandity</td>
+		<td><input type="text" name="ProductQuandity" value="<%= @product_quandity%>"/></td>
+	</tr>
+	<tr>
+		<td>Price</td>
+		<td><input type="text" name="Price" value="<%= @price%>"/></td>
+	</tr>
+	
+	<tr>
+		<td><input type="submit" value="Update" /></td>
+		<td><input type="reset" value="Back" /></td>	
+		<td><input type="hidden" value="<%= @pro_id%>" name="product_id"/>
+	</tr>
+</table>
+</form>
